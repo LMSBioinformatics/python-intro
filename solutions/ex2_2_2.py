@@ -8,4 +8,4 @@ def gc_content(sequence):
     return 100 * (gc / len(sequence))
 
 
-#print('GC%', gc_content('ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG'))
+#print 'GC%', gc_content('ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG')

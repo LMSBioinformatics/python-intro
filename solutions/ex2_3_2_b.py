@@ -16,18 +16,18 @@ if os.path.exists(gene_file):
         for row in reader:
             record = {'gene': row['gene'], 'length': int(row['end']) - int(row['start']) + 1}
             results.append(record)
-    print(results)
+    print results
     with open(output_file, "w") as out:
         writer = csv.DictWriter(out, results[0].keys(), delimiter='\t')
         writer.writeheader()  # write header
         for record in results:
             writer.writerow(record)
 else:
-    print(gene_file, 'does not exists!')
+    print gene_file, 'does not exists!'
 
 if os.path.exists(output_file):
     # print contents of output file
     with open(output_file) as f:
-        print(f.read())
+        print f.read()
 else:
-    print(output_file, 'does not exists!')
+    print output_file, 'does not exists!'

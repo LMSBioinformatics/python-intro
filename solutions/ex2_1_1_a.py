@@ -15,7 +15,7 @@ def advanced_mean(values):
     mean = total / len(values)
     return mean
 
-print("Mean of 2 & 3:", simple_mean(2, 3))
-print("Mean of 8 & 10:", simple_mean(8, 10))
-print("Mean of [2, 4, 6]", advanced_mean([2, 4, 6]))
-print("Mean of values even numbers under 20:", advanced_mean(list(range(0, 20, 2))))
+print "Mean of 2 & 3:", simple_mean(2, 3)
+print "Mean of 8 & 10:", simple_mean(8, 10)
+print "Mean of [2, 4, 6]", advanced_mean([2, 4, 6]) 
+print "Mean of values even numbers under 20:", advanced_mean(list(range(0, 20, 2)))

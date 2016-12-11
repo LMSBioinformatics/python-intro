@@ -6,7 +6,7 @@ seqList = list(SeqIO.parse('data/sample.fa', 'fasta'))
 
 # find the number of sequences present in the file
 numSeq = len(seqList)
-print('Total number of sequences:', numSeq)
+print 'Total number of sequences:', numSeq
 
 # find IDs and lengths of the longest and the shortest sequences
 maxLen = minLen = len(seqList[0].seq)
@@ -23,8 +23,8 @@ for i in range(1, numSeq):
         minLen = len(seqList[i].seq)
         sSeq = seqList[i].id
 
-print('Longest sequence is', lSeq, 'with length', maxLen, 'bp')
-print('Shortest sequence is', sSeq, 'with length', minLen, 'bp')
+print 'Longest sequence is', lSeq, 'with length', maxLen, 'bp'
+print 'Shortest sequence is', sSeq, 'with length', minLen, 'bp'
 
 # Creating a new sequence list containing sequences longer than 500bp
 # Calculate the average length of these sequences
@@ -38,11 +38,11 @@ for sequence in seqList:
         longSeqList.append(sequence)
         totLength += len(sequence)
         gc = GC(sequence.seq)
-        print('Percentage of GC content in', sequence.id, 'is', gc)
+        print 'Percentage of GC content in', sequence.id, 'is', gc
 
 avgLength = totLength / len(longSeqList)
 
-print('Average length for sequences longer than 500bp is', avgLength)
+print 'Average length for sequences longer than 500bp is', avgLength
 
 # Write sequences in the longSeqList in a file with 'GenBank' format
 SeqIO.write(longSeqList, 'sample.long.fa', 'fasta')

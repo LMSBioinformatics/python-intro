@@ -13,5 +13,5 @@ def reverse_complement(sequence):
         result.append(reverse_base[base])
     return "".join(result)
 
-print(reverse_complement('ATCGTAGCatgcAATTGGC'))
-print(reverse_complement('ATCGTAGCatgcxAATTGGC'))
+print reverse_complement('ATCGTAGCatgcAATTGGC')
+print reverse_complement('ATCGTAGCatgcxAATTGGC')

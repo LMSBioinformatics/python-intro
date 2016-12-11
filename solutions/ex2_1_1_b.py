@@ -11,4 +11,4 @@ def molecular_weight(sequence):
 
 # Test your function using some example sequences.
 weight = molecular_weight("ACTTGGGCAGATAGTCGCG")
-print("Molecular weight:", weight, "g/mol")
+print "Molecular weight:", weight, "g/mol"

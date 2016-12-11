@@ -16,17 +16,17 @@ if os.path.exists(gene_file):
             gene, chrom, start, end = line.strip().split("\t")
             row = {'gene': gene, 'length': int(end) - int(start) + 1}
             results.append(row)
-    print(results)
+    print results
     with open(output_file, "w") as out:
         out.write('gene' + "\t" + 'length' + "\n")  # write header
         for record in results:
             out.write(record['gene'] + "\t" + str(record['length']) + "\n")
 else:
-    print(gene_file, 'does not exists!')
+    print gene_file, 'does not exists!'
 
 if os.path.exists(output_file):
     # print contents of output file
     with open(output_file) as f:
-        print(f.read())
+        print f.read()
 else:
-    print(output_file, 'does not exists!')
+    print output_file, 'does not exists!'

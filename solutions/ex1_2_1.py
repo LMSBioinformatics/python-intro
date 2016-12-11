@@ -8,10 +8,10 @@ C = "TGT"
 codons = [C, L, Y, S, Y]
 
 # Print the DNA sequence of the protein
-print("DNA sequence:", codons)
+print "DNA sequence:", codons
 
 # Print the DNA sequence of the last amino acid
-print("Last codon:", codons[-1])
+print "Last codon:", codons[-1]
 
 # Create two more variables containing the DNA sequence for a stop codon and a start codon
 start = "ATG"
@@ -23,5 +23,9 @@ codons[0] = start
 # Append the stop codon to the end of the list
 codons.append(stop)
 
+# Get the length of the codon list
+
+print len(codons)
+
 # Print the resulting DNA sequence
-print("DNA sequence after alteration:", "".join(codons))
+print "DNA sequence after alteration:", "".join(codons)

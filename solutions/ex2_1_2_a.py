@@ -11,4 +11,4 @@ def base_composition(sequence):
     return (num_As, num_Cs, num_Gs, num_Ts)
 
 dna = "ACAGTGTCGTACAGATCAGTCAGATACA"
-print('base composition', base_composition(dna))
+print 'base composition', base_composition(dna)

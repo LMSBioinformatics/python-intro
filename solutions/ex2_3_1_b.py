@@ -9,4 +9,4 @@ with open('data/dna.txt', "r") as f:
     for line in f:
         line = line.rstrip()
         line_num += 1
-        print(line_num, ":", len(line), "\t", line)
+        print line_num, ":", len(line), "\t", line

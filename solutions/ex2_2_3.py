@@ -15,4 +15,4 @@ def extract_sub_sequences(sequence, window_size):
 
 
 #dna = 'ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG'
-#print(extract_sub_sequences(dna, 5))
+#print extract_sub_sequences(dna, 5)

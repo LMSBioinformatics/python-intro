@@ -27,6 +27,6 @@ def molecular_weight(sequence, molecule_type='DNA'):
     return total_weight
 
 
-print("RNA weight:", molecular_weight("AACGUCGAAUCCUAGCGC", molecule_type="RNA"), "g/mol")
-print("DNA weight:", molecular_weight("AACGTCGAATCCTAGCGC"), "g/mol")
-print("Other sequence weight:", molecular_weight("AACGTCGAATXXXCCTAGCGC"), "g/mol")
+print "RNA weight:", molecular_weight("AACGUCGAAUCCUAGCGC", molecule_type="RNA"), "g/mol"
+print "DNA weight:", molecular_weight("AACGTCGAATCCTAGCGC"), "g/mol"
+print "Other sequence weight:", molecular_weight("AACGTCGAATXXXCCTAGCGC"), "g/mol"

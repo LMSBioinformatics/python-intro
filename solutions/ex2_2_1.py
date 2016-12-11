@@ -47,6 +47,6 @@ def protein_translation(sequence, geneticCode):
 
 
 dna_sequence = 'ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG'
-print(dna_sequence)
+print dna_sequence
 protein_3letter_sequence = protein_translation(dna_sequence, standardGeneticCode)
-print("".join(protein_3letter_sequence))
+print "".join(protein_3letter_sequence)

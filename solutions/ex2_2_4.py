@@ -13,6 +13,6 @@ def gc_content_along_the_chain(dna_sequence, window_size):
     return gc_results
 
 dna = 'ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG'
-print(gc_content(dna))
-print(extract_sub_sequences(dna, 5))
-print(gc_content_along_the_chain(dna, 5))
+print gc_content(dna)
+print extract_sub_sequences(dna, 5)
+print gc_content_along_the_chain(dna, 5)
