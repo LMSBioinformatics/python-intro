@@ -2,7 +2,7 @@
 
 Materials for the course run by the Graduate School of Life Sciences, University of Cambridge.
 
-- Course website: http://pycam.github.io/
+- Course website: http://mrccsc.github.io/training.html
 - Booking website: http://www.training.cam.ac.uk/
 
 
@@ -11,22 +11,20 @@ If you wish to run the course on your personal computer, here are the steps to f
 ## Clone this github project
 
 ```bash
-git clone https://github.com/pycam/python-intro.git
+git clone https://github.com/mrccsc/python-intro/python-intro.git
 cd python-intro
 ```
 
 ## Dependencies
 
-Install Python 3 by downloading the latest version from https://www.python.org/.
+Install Python 2 by downloading the latest version from https://www.python.org/.
 
-Python 2.x is legacy, Python 3.x is the present and future of the language.
-
-Create first a virtual environment using the [`venv` library](https://docs.python.org/3/library/venv.html). Update pip if needed, install [jupyter](http://jupyter.org/) and [RISE](https://github.com/damianavila/RISE) to get a slideshow extension into jupyter.
+Create first a virtual environment using the [`venv` library](https://docs.python.org/2/library/venv.html). Update pip if needed, install [jupyter](http://jupyter.org/) and [RISE](https://github.com/damianavila/RISE) to get a slideshow extension into jupyter.
 
 ***Note*** A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments.
 
 ```bash
-python3 -m venv venv
+python -m venv venv
 # activate your virtual environment
 source venv/bin/activate
 # update pip if needed
